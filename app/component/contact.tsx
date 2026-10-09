@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Globe, Flame, ArrowRight } from 'lucide-react';
+import { Mail, Globe, Flame, Phone } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -61,7 +61,7 @@ export default function Contact() {
         </motion.div>
 
         {/* Contact Cards */}
-        <div className='mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
+        <div className='mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
           {/* Email */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -75,23 +75,43 @@ export default function Contact() {
 
             <h3 className='text-xl font-semibold text-white'>Email</h3>
 
-            <div className='mt-4 space-y-2 text-white/80'>
+            <div className='mt-4 min-w-0 space-y-2 text-white/80'>
               <a
                 href='mailto:defriends_club@yahoo.com'
-                className='block hover:text-white'
+                className='block break-all text-sm sm:text-base hover:text-white'
               >
                 defriends_club@yahoo.com
               </a>
 
               <a
                 href='mailto:defriendsclub@gmail.com'
-                className='block hover:text-white'
+                className='block break-all text-sm sm:text-base hover:text-white'
               >
                 defriendsclub@gmail.com
               </a>
             </div>
           </motion.div>
 
+          {/* Phone */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            whileHover={{ y: -8 }}
+            className='rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl'
+          >
+            <Phone className='mb-5 text-white' size={34} />
+
+            <h3 className='text-xl font-semibold text-white'>Phone</h3>
+
+            <a
+              href='tel:08036417178'
+              className='mt-4 block text-xl text-white/80 transition-colors hover:text-white'
+            >
+              08036417178
+            </a>
+          </motion.div>
           {/* Website */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -107,7 +127,6 @@ export default function Contact() {
 
             <p className='mt-4 text-white/80'>Coming Soon</p>
           </motion.div>
-
           {/* Twitter */}
           <motion.a
             href='https://x.com/dynamicebirafriends'
@@ -126,7 +145,6 @@ export default function Contact() {
 
             <p className='mt-4 text-white/80'>@dynamicebirafriends</p>
           </motion.a>
-
           {/* Facebook */}
           <motion.a
             href='https://facebook.com/defriendsclub'
