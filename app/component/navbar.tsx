@@ -27,7 +27,7 @@ export default function Navbar() {
           <Image
             width={80}
             height={80}
-            src='/logo.png'
+            src='/logo new.png'
             alt='DE-FRIENDS CLUB Logo'
             className='rounded-full w-20 h-20'
           />
