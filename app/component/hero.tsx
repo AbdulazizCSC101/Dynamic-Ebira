@@ -53,21 +53,23 @@ export default function Hero() {
             </p>
 
             <div className='flex flex-wrap gap-5 mt-10'>
-              <motion.button
+              <motion.a
+                href='#constitution'
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
                 className='bg-white text-[#2E3192] px-8 py-4 rounded-full font-semibold'
               >
                 Learn More
-              </motion.button>
+              </motion.a>
 
-              <motion.button
+              <motion.a
+                href='#contact'
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
                 className='border-2 border-white px-8 py-4 rounded-full'
               >
                 Contact Us
-              </motion.button>
+              </motion.a>
             </div>
           </div>
         </motion.div>
